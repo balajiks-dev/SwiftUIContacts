@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17189" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+        <attribute name="isWatched" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="movieLanguage" optional="YES" attributeType="String"/>
+        <attribute name="movieName" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="PersonData" representedClassName=".PersonData" syncable="YES">
+        <attribute name="emailId" optional="YES" attributeType="String"/>
+        <attribute name="fullName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="mobileNumber" optional="YES" attributeType="String"/>
+        <attribute name="roleTitle" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Persons" representedClassName="Persons" syncable="YES">
+        <attribute name="persons" optional="YES" attributeType="Transformable" customClassName="[PersonData]"/>
+    </entity>
+    <elements>
+        <element name="Item" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="PersonData" positionX="-63" positionY="9" width="128" height="118"/>
+        <element name="Persons" positionX="-45" positionY="54" width="128" height="58"/>
+    </elements>
+</model>
